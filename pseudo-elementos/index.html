@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elementos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .firsline::first-line{
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .firsletter::first-letter{
+            color: rgb(255, 0, 0);
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .selection::selection{
+            background-color: red;
+            
+        }
+        ul.marker li::marker{
+            color: aqua;
+            content: "> " ;
+            font-size: 20px;
+            
+        }
+        input{
+            margin: auto;
+            display: flex;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .placeholder::placeholder{
+            text-align: center;
+            color: brown;
+        }
+        div{
+            color: white;
+            text-align: center;
+        }
+        .before::before{
+            content: "[X] ";
+            color: rgb(85, 255, 6);
+        }
+        .after::after{
+            content: " [X]";
+            color: rgb(81, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos CSS</h1>
+    <hr>
+    <h2>1 first line</h2> <!--ele só ira mecher na primeira linha do paragrafo-->
+    <p class="firsline">
+        
+        Ele só ira mecher na primeira linha. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias eligendi alias asperiores quia facilis laudantium. Aut dolorem ducimus fuga sapiente fugit ipsam libero animi cupiditate odio magni. Nulla, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, eius alias fuga fugiat architecto modi labore quisquam aspernatur, necessitatibus itaque praesentium harum voluptatem quam beatae unde incidunt eligendi aut esse?
+    Facilis quis reprehenderit inventore similique recusandae architecto unde ex, obcaecati expedita ab laboriosam atque quasi id vero corporis ullam, alias reiciendis fugiat cum illo, veritatis molestias distinctio perspiciatis. Vero, sit.
+    </p>
+    <hr>
+    <h2>2 first letter</h2>
+
+    <p class="firsletter">  <!--ele só ira mecher na primeira letra do paragrafo -->
+        
+        Ele só ira mecher na primeira letra. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias eligendi alias asperiores quia facilis laudantium. Aut dolorem ducimus fuga sapiente fugit ipsam libero animi cupiditate odio magni. Nulla, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, eius alias fuga fugiat architecto modi labore quisquam aspernatur, necessitatibus itaque praesentium harum voluptatem quam beatae unde incidunt eligendi aut esse?
+    Facilis quis reprehenderit inventore similique recusandae architecto unde ex, obcaecati expedita ab laboriosam atque quasi id vero corporis ullam, alias reiciendis fugiat cum illo, veritatis molestias distinctio perspiciatis. Vero, sit.
+    </p>
+    <hr>
+    <h2>3 selection</h2>
+
+    <p class="selection">  <!--ele só ira mecher na primeira letra do paragrafo -->
+        
+        Ele só ira mecher na primeira letra. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias eligendi alias asperiores quia facilis laudantium. Aut dolorem ducimus fuga sapiente fugit ipsam libero animi cupiditate odio magni. Nulla, excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, eius alias fuga fugiat architecto modi labore quisquam aspernatur, necessitatibus itaque praesentium harum voluptatem quam beatae unde incidunt eligendi aut esse?
+    Facilis quis reprehenderit inventore similique recusandae architecto unde ex, obcaecati expedita ab laboriosam atque quasi id vero corporis ullam, alias reiciendis fugiat cum illo, veritatis molestias distinctio perspiciatis. Vero, sit.
+    </p>
+
+    <hr>
+    <h2>4 Marker</h2>
+    <ul class="marker">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <hr>
+    <h2>5 placeholder</h2>
+    <input type="text" placeholder="Digite seu email" class="placeholder">
+
+    <hr>
+    <h2>6 before</h2>
+    <div class="before">exemplo de texto</div>
+    <div class="before">exemplo de texto</div>
+    <div class="before">exemplo de texto</div>
+    <hr>
+    <h2>7 after</h2>
+    <div class="after">exemplo de texto</div>
+    <div class="after">exemplo de texto</div>
+    <div class="after">exemplo de texto</div>
+
+</body>
+</html>

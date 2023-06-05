@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>fromas em css part 1</title>
+    <style>
+        #trapezio{
+            width: 100px;
+            height: 0;
+            border-bottom: 50px solid aqua;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+        #paralelogramo{
+            width: 200px;
+            height: 100px;
+            background-color:aqua ;
+            transform: skewX(-30deg);
+            margin-left:25px ;
+        }
+        #pentagono{
+            margin-top: 30px;
+            width: 100px;
+            height: 0;
+            position: relative;
+            display: inline-block;
+            border-top: 70px solid aqua;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+        #pentagono::before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-bottom: 50px solid aqua;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            top: -120px;
+            left: -25px;
+        }
+        #hexagono{
+            margin-top: 30px;
+            width: 100px;
+            height: 60px;
+            background-color: aqua;
+            position: relative;
+            display: inline-block;
+        }
+        #hexagono::before{
+            content: "";
+            width: 0;
+            height: 0;
+            top: -30px;
+            position: absolute;
+            border-bottom: 30px solid aqua;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        #hexagono::after{
+            content: "";
+            width: 0;
+            height: 0;
+            bottom:-30px;
+            position: absolute;
+            border-top: 30px solid aqua;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formas em css part 2</h1>
+    <hr>
+    <h2>trapezio</h2>
+    <div id="trapezio"></div>
+    <hr>
+    <h2>paralelogramo</h2>
+    <div id="paralelogramo"></div> 
+    <hr>
+    <h2>pentagono</h2>
+    <div id="pentagono"></div>
+    <hr>
+    <h2>hexagono</h2>
+    <div id="hexagono"></div>
+</body>
+</html>

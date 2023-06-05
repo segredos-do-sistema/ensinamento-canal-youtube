@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.retangulo{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+}
+.circulo{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.triangulo{
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid aqua;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.triangulo-invertido{
+    width: 0;
+    height: 0;
+    border-top: 100px solid aqua;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.trapezio{
+    width: 100px;
+    height: 0;
+    border-bottom: 50px solid aqua;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+.paralelogramo{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    transform: skewX(-30deg);
+    margin-left: 15px;
+}
+.pentagono{
+    width: 100px;
+    height: 0;
+    position: relative;
+    display: inline-block;
+    border-top: 70px solid aqua;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    margin-top: 50px;
+}
+.pentagono::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:-120px;
+    left: -25px;
+    border-bottom: 50px solid aqua;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+
+.hexagono{
+    width: 100px;
+    height: 60px;
+    background-color: aqua;
+    position: relative;
+    display: inline-block;
+    margin-top:50px ;
+    
+}
+.hexagono::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:-30px;
+    border-bottom: 30px solid aqua;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.hexagono::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom:-30px;
+    border-top: 30px solid aqua;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    
+}
+ 

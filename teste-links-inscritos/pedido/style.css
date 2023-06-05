@@ -1,0 +1,53 @@
+@charset "utf-8";
+img{
+    width: 200px;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+}
+h1#titulo-principal{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:hover#comentarios-principal{
+    color: darkorange;
+}
+a:hover#comentarios-principal>h1{
+    background-color: black;
+    border-radius: 10px;
+}
+a:hover#contatos-principal{
+    color: rgb(255, 0, 0);
+}
+a:hover#contatos-principal>h1{
+    background-color: black;
+    border-radius: 10px;
+}
+a:hover#fotos-principal{
+    color: rgb(0, 238, 255);
+}
+a:hover#fotos-principal>h1{
+    background-color: black;
+    border-radius: 10px;
+}
+ul{
+    text-align: center;
+    padding: 0%;
+}
+:hover.titulos{
+    background-color: aqua;
+}
+

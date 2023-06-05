@@ -1,0 +1,21 @@
+@charset "UFT-8";
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(46, 35, 35);
+}
+h1{
+    color: rgb(255, 208, 0);
+    text-align: center;
+}
+
+h2{
+    color: rgb(200, 255, 0);
+}
+hr{
+   
+   height: 3px;
+   background-color: white;
+}
