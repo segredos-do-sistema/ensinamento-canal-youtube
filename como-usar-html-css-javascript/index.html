@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            height: 100vh;
+            height: 97vh;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
@@ -25,7 +25,23 @@
             padding: 10px;
             border-radius: 5px;
         }
+        button#resetar{
+            padding: 2px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-right: 10px;
+            
+        }
         
+        #cor-azul:hover{
+            background-color: blue;
+        }
+        #cor-amarelo:hover{
+            background-color: yellow;
+        }
+        #cor-vermelho:hover{
+            background-color: red;
+        }
 
     </style>
     <script>
@@ -37,9 +53,9 @@
            cor_da_caixa.style.background = 'blue'
 
            var neutro = document.getElementById('cor-amarelo')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
            var neutro = document.getElementById('cor-vermelho')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
 
            var cor = document.getElementById('cor')
            cor.innerText=('você mudou para a cor azul')
@@ -56,9 +72,9 @@
            cor_da_caixa.style.background = 'yellow'
 
            var neutro = document.getElementById('cor-azul')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
            var neutro = document.getElementById('cor-vermelho')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
 
            var cor = document.getElementById('cor')
            cor.innerText=('você mudou para a cor amarelo')
@@ -74,9 +90,9 @@
            cor_da_caixa.style.background = 'red'
            
            var neutro = document.getElementById('cor-amarelo')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
            var neutro = document.getElementById('cor-azul')
-           neutro.style.background = 'whitesmoke'
+           neutro.style.background = ''
 
            var cor = document.getElementById('cor')
            cor.innerText=('você mudou para a cor vermelho')
@@ -84,6 +100,11 @@
            cor.style.color = 'white'
            cor.style.backgroundColor ='rgb(255, 49, 49)'
         }
+        function resetar(){
+            window.location.reload();
+           
+        }
+        
     </script>
 </head>
 <body>
@@ -99,5 +120,8 @@
         <button id="cor-vermelho" onclick=vermelho()>vermelho</button>
     </main>
     <div id="cor"></div>
+
+    <button id="resetar" onclick= resetar()>resetar</button>
+    
 </body>
 </html>
