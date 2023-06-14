@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            
+            
+        }
+        div{
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+
+    </style>
+    <script>
+        function azul(){
+           var azul = document.body
+           azul.style.background = 'blue'
+
+           var cor_da_caixa = document.getElementsByTagName('button')[0]
+           cor_da_caixa.style.background = 'blue'
+
+           var neutro = document.getElementById('cor-amarelo')
+           neutro.style.background = 'whitesmoke'
+           var neutro = document.getElementById('cor-vermelho')
+           neutro.style.background = 'whitesmoke'
+
+           var cor = document.getElementById('cor')
+           cor.innerText=('você mudou para a cor azul')
+           cor.style.fontSize = '25px'
+           cor.style.color = 'white'
+           cor.style.backgroundColor ='rgb(71, 89, 245)'
+
+        }
+        function amarelo(){
+           var azul = document.body
+           azul.style.background = 'yellow'
+
+           var cor_da_caixa = document.getElementsByTagName('button')[1]
+           cor_da_caixa.style.background = 'yellow'
+
+           var neutro = document.getElementById('cor-azul')
+           neutro.style.background = 'whitesmoke'
+           var neutro = document.getElementById('cor-vermelho')
+           neutro.style.background = 'whitesmoke'
+
+           var cor = document.getElementById('cor')
+           cor.innerText=('você mudou para a cor amarelo')
+           cor.style.fontSize = '25px'
+           cor.style.color = 'white'
+           cor.style.backgroundColor ='rgb(165, 184, 40,0.3)'
+        }
+        function vermelho(){
+           var azul = document.body
+           azul.style.background = 'red'
+
+           var cor_da_caixa = document.getElementsByTagName('button')[2]
+           cor_da_caixa.style.background = 'red'
+           
+           var neutro = document.getElementById('cor-amarelo')
+           neutro.style.background = 'whitesmoke'
+           var neutro = document.getElementById('cor-azul')
+           neutro.style.background = 'whitesmoke'
+
+           var cor = document.getElementById('cor')
+           cor.innerText=('você mudou para a cor vermelho')
+           cor.style.fontSize = '25px'
+           cor.style.color = 'white'
+           cor.style.backgroundColor ='rgb(255, 49, 49)'
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>
+            mudando a cor de fundo
+        </h1>
+    </header>
+
+    <main>
+        <button id="cor-azul" onclick=azul()>azul</button>
+        <button id="cor-amarelo" onclick=amarelo()>amarelo</button>
+        <button id="cor-vermelho" onclick=vermelho()>vermelho</button>
+    </main>
+    <div id="cor"></div>
+</body>
+</html>
